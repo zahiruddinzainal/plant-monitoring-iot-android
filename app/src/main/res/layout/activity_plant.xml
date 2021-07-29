@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="PlantActivity">
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+       android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:fab_addButtonColorNormal="@color/pink"
+        app:fab_addButtonColorPressed="@color/pink_pressed"
+        app:fab_addButtonPlusIconColor="@color/white"
+        app:fab_labelStyle="@style/custom_fab">
+
+        <com.getbase.floatingactionbutton.AddFloatingActionButton
+            android:id="@+id/fab_action1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/black_semi_transparent"
+            app:fab_colorPressed="@color/white_pressed"
+            app:fab_size="mini"
+            app:fab_icon="@drawable/ic_add_plant"
+            app:fab_title="Create Plant"/>
+
+        <com.getbase.floatingactionbutton.AddFloatingActionButton
+            android:id="@+id/fab_action2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/black_semi_transparent"
+            app:fab_colorPressed="@color/white_pressed"
+            app:fab_size="mini"
+            app:fab_icon="@drawable/ic_plantpedia"
+            app:fab_title="Plantpedia"
+
+            />
+</com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+</RelativeLayout>
